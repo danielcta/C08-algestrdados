@@ -10,7 +10,7 @@ public class C08EX13
         int cidadeMaiorUmMilhao = 0, cidadeMulheres = 0;
         double percentual, decimal;
 
-        Scanner cidades = new Scanner(C08EX13.class.getResourceAsStream("C08EX13.txt"));
+        Scanner cidades = new Scanner(C08EX13.class.getResourceAsStream("C08EX13.txt")); //fazer o download do arquivo C08EX13.txt no mesmo diretório do github
 
         while (cidades.hasNextLine())
         {
