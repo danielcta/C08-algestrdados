@@ -6,7 +6,7 @@ public class C08EX10 {
         int quantidade;
         double preco, soma = 0, media = 0, custoTotal = 0, maiorInsumo = 0;
 
-        Scanner insumo = new Scanner(C0810EX.class.getResourceAsStream("C08EX10.txt"));
+        Scanner insumo = new Scanner(C0810EX.class.getResourceAsStream("C08EX10.txt")); //baixar o arquivo C08EX10.txt no mesmo diretório do github
 
         while (insumo.hasNextLine())
         {
