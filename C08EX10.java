@@ -1,12 +1,13 @@
+import java.text.NumberFormat;
 import java.util.Scanner;
 
-public class C08EX10 {
+public class C0810EX {
     public static void main(String[] args) {
         String nome, nomeMaiorInsumo = "";
         int quantidade;
-        double preco, soma = 0, media = 0, custoTotal = 0, maiorInsumo = 0;
+        double preco, soma = 0, media = 0, maiorInsumo = 0;
 
-        Scanner insumo = new Scanner(C0810EX.class.getResourceAsStream("C08EX10.txt")); //baixar o arquivo C08EX10.txt no mesmo diretório do github
+        Scanner insumo = new Scanner(C0810EX.class.getResourceAsStream("C08EX10.txt"));
 
         while (insumo.hasNextLine())
         {
@@ -16,7 +17,6 @@ public class C08EX10 {
             insumo.nextLine();
 
             soma += quantidade * preco;
-            custoTotal += soma;
             media = soma/4;
 
             if (maiorInsumo < preco)
@@ -25,6 +25,6 @@ public class C08EX10 {
                 nomeMaiorInsumo = nome;
             }
         }
-        System.out.printf("Custo Total --> %11.2f\nMédia dos Custos Parciais --> %11.2f\nNome do Insumo de maior custo parcia --> %s", soma, media, nomeMaiorInsumo);
+        System.out.printf("Custo Total --> %s\nMédia dos Custos Parciais --> %s\nNome do Insumo de maior custo parcia --> %s", NumberFormat.getCurrencyInstance().format(soma), NumberFormat.getCurrencyInstance().format(media), nomeMaiorInsumo);
     }
 }
