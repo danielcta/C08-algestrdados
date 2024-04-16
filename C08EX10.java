@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class C0810EX {
+public class C08EX10 {
     public static void main(String[] args) {
         String nome, nomeMaiorInsumo = "";
         int quantidade;
