@@ -1,13 +1,13 @@
 import java.text.NumberFormat;
 import java.util.Scanner;
 
-public class C0810EX {
+public class C08EX10 {
     public static void main(String[] args) {
         String nome, nomeMaiorInsumo = "";
         int quantidade;
         double preco, soma = 0, media = 0, maiorInsumo = 0;
 
-        Scanner insumo = new Scanner(C0810EX.class.getResourceAsStream("C08EX10.txt"));
+        Scanner insumo = new Scanner(C08EX10.class.getResourceAsStream("C08EX10.txt"));
 
         while (insumo.hasNextLine())
         {
