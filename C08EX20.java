@@ -11,9 +11,9 @@ public class C08EX20
                 "Exercício 20",
                 JOptionPane.QUESTION_MESSAGE));
 
-        for (int aux = 1; aux <= n; aux++)
+        for (int aux = 1; aux <= n;)
         {
-            numero *= 2;
+            aux *= 2;
 
         }
         System.out.printf("%.0f\n", numero);
