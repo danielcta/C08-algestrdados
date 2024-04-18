@@ -13,7 +13,7 @@ public class C08EX20
 
         for (int aux = 1; aux <= n;)
         {
-            aux *= 2;
+            numero *= 2;
 
         }
         System.out.printf("%.0f\n", numero);
