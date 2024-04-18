@@ -11,7 +11,7 @@ public class C08EX20
                 "Exercício 20",
                 JOptionPane.QUESTION_MESSAGE));
 
-        for (int aux = 1; aux <= n;)
+        for (int aux = 1; aux <= n; aux++)
         {
             numero *= 2;
 
